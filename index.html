@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon portfolio - Développeur Web">
+    <meta name="author" content="IMAD Hamouche">
+    <title>Mon portfolio IMAD</title>
+    <link rel="shortcut icon" href="./Assets/Iconarchive-Cute-Animal-Cute-Octopus.512.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navBarre">
+            <img src="./Assets/image_0946180_20220530_ob_847bc9_plongeur-sous-marin-et-grenouille-he.gif" alt="Plongeur sous-marin et grenouille" width="15%">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <div class="about-content">
+                <h1>Ma première page HTML</h1>
+                <h3>Développeur web bootcamp</h3>
+            </div>
+        </section>
+        
+        <section id="work">
+            <h2>Mes travaux</h2>
+            <video width="80%" height="auto" controls>
+                <source src="./Assets/Plongée Epave Giannis D (-28m) - Egypte - Parmis l'une des plus belles épaves au monde. 4K.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="resume">
+            <h3>Je me présente...</h3>
+            <p>Je m'appelle IMAD Hamouche, j'ai 32 ans, <br> ingénieur en automatique et informatique industrielle, <br> passionné par le développement web, ma passion est la plongée sous-marine. 
+                <a href="https://github.com/settings/profile" target="_blank">Mon CV</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <form action="votre_script.php" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="nom">Nom</label></td>
+                        <td><input type="text" id="nom" name="nom" placeholder="Votre nom svp..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prenom">Prénom</label></td>
+                        <td><input type="text" id="prenom" name="prenom" placeholder="Votre prénom svp..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="numero_du_telephone">Numéro du téléphone</label></td>
+                        <td><input type="text" id="numero_du_telephone" name="numero_du_telephone" placeholder="Votre numéro du téléphone svp..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message</label></td>
+                        <td><textarea id="message" name="message" placeholder="Votre message" cols="25" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Envoyer</button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <p>&copy; 2024 - IMAD Hamouche</p>
+    </footer>
+
+</body>
+</html>
